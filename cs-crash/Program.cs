@@ -48,15 +48,21 @@ namespace MyFirstProgram
             int e = 234;
             string f = Convert.ToString(e);
 
-            string g = "This is string to be convered to char";
-            char h = Convert.ToChar(g);
-
             Console.WriteLine("Type of a " + a.GetType());
             Console.WriteLine("Type of b " + b.GetType());
             Console.WriteLine(b);
             Console.WriteLine(d);
             Console.WriteLine(f);
-            Console.WriteLine(h);
+
+            // User Input
+            Console.WriteLine("What's your name ? ");
+            string nameInput = Console.ReadLine();
+
+            Console.WriteLine("What is your age ? ");
+            int ageInput = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Hello " + nameInput);
+            Console.WriteLine("Your age is " + ageInput);
+            Console.ReadKey();
 
         }
     }

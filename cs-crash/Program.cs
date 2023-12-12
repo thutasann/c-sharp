@@ -29,6 +29,35 @@ namespace MyFirstProgram
 
             string name = "Bro code";
             Console.WriteLine("This is String" +  name);
+
+            // constants = immutable values which are known at compile time
+            // and do not change for the life of the program
+            const double pi = 3.1429;
+            Console.WriteLine("This is PI Value " + pi);
+
+            // type casting = Converting a value to a different data type
+            // Usefule when we accept user input (string)
+            // Different data type can do different things
+
+            double a = 3.14;
+            int b = Convert.ToInt32(a);
+
+            int c = 123;
+            double d = Convert.ToDouble(c) + 12.3;
+
+            int e = 234;
+            string f = Convert.ToString(e);
+
+            string g = "This is string to be convered to char";
+            char h = Convert.ToChar(g);
+
+            Console.WriteLine("Type of a " + a.GetType());
+            Console.WriteLine("Type of b " + b.GetType());
+            Console.WriteLine(b);
+            Console.WriteLine(d);
+            Console.WriteLine(f);
+            Console.WriteLine(h);
+
         }
     }
 }

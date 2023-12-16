@@ -12,6 +12,7 @@
     <None Remove="Classes\" />
     <None Remove="Classes\Inheritance\" />
     <None Remove="Classes\ArrayOfObjects\" />
+    <None Remove="Classes\MethodOverriding\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="..\.editorconfig" />
@@ -20,5 +21,6 @@
     <Folder Include="Classes\" />
     <Folder Include="Classes\Inheritance\" />
     <Folder Include="Classes\ArrayOfObjects\" />
+    <Folder Include="Classes\MethodOverriding\" />
   </ItemGroup>
 </Project>

@@ -89,6 +89,15 @@ namespace MyFirstProgram
             ObjCar objCar1 = Copy(objCar);
             Console.WriteLine("ojbCar1 " + objCar1.color + " " + objCar1.model);
 
+            // Method Overriding = provides a new version of a method inherited
+            // from a parent class inherited method must be : abstract, virtual, or already
+            // overriden used with ToString(), ploymorphism
+            Dog dog = new();
+            Cat cat = new();
+            dog.Speak();
+            cat.Speak();
+
+
             Console.ReadKey();
 
         }

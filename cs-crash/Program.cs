@@ -50,6 +50,11 @@ namespace MyFirstProgram
 
             cycle1.Race();
 
+            // overload constructor = technique to creat multiple constructors,
+            // with a different set of parameters
+            // name + parameter = signature
+            Pizza pizza = new("stuffed crust", "red sauce");
+
 
             Console.ReadKey();
 

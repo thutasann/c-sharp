@@ -86,7 +86,9 @@ namespace MyFirstProgram
             // Random Class
             Random random = new Random();
             int randomNum = random.Next(1, 4);
+            double randomDouble = random.NextDouble();
             Console.WriteLine("randomNum" + randomNum);
+            Console.WriteLine("randomDouble" + randomDouble);
 
 
             Console.ReadKey();

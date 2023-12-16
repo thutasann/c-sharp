@@ -67,12 +67,44 @@ namespace MyFirstProgram
             Console.WriteLine(childCarTwo.speed);
             Console.WriteLine(childCarThree.wheels);
 
-            
+            // Array of Objects
+            //ObjCar[] garage = new ObjCar[3];
+            //ObjCar objCar = new("Obj Car one");
+            //ObjCar objCarTwo = new("Obj Car two");
+            //ObjCar objCarThree = new("Obj car three");
+            //garage[0] = objCar;
+            //garage[1] = objCarTwo;
+            //garage[2] = objCarThree;
+
+            //foreach(ObjCar objCarItem in garage)
+            //{
+            //    Console.WriteLine(objCarItem.model);
+            //}
+
+            // Objects as arguments
+            ObjCar objCar = new("Mustage", "red");
+            ChangeColor(objCar, "blue");
+            Console.WriteLine(objCar.color + " " + objCar.model);
+
+            ObjCar objCar1 = Copy(objCar);
+            Console.WriteLine("ojbCar1 " + objCar1.color + " " + objCar1.model);
 
             Console.ReadKey();
 
         }
 
+        public static void ChangeColor(ObjCar car, string color)
+        {
+            car.color = color;
+        }
+
+        public static ObjCar Copy(ObjCar objCar)
+        {
+            return new ObjCar(objCar.model, objCar.color);
+        }
+
     }
+
+    
     
 }

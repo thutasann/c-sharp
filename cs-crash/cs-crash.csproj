@@ -11,6 +11,7 @@
   <ItemGroup>
     <None Remove="Classes\" />
     <None Remove="Classes\Inheritance\" />
+    <None Remove="Classes\ArrayOfObjects\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="..\.editorconfig" />
@@ -18,5 +19,6 @@
   <ItemGroup>
     <Folder Include="Classes\" />
     <Folder Include="Classes\Inheritance\" />
+    <Folder Include="Classes\ArrayOfObjects\" />
   </ItemGroup>
 </Project>

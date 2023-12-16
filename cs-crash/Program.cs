@@ -55,13 +55,13 @@ namespace MyFirstProgram
             Console.WriteLine(f);
 
             // User Input
-            //Console.WriteLine("What's your name ? ");
-            //string nameInput = Console.ReadLine();
+            Console.WriteLine("What's your name ? ");
+            string nameInput = Console.ReadLine();
 
-            //Console.WriteLine("What is your age ? ");
-            //int ageInput = Convert.ToInt32(Console.ReadLine());
-            //Console.WriteLine("Hello " + nameInput);
-            //Console.WriteLine("Your age is " + ageInput);
+            Console.WriteLine("What is your age ? ");
+            int ageInput = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Hello " + nameInput);
+            Console.WriteLine("Your age is " + ageInput);
 
             // Arithmetic Operation
             int friends = 5;
@@ -89,6 +89,109 @@ namespace MyFirstProgram
             double randomDouble = random.NextDouble();
             Console.WriteLine("randomNum" + randomNum);
             Console.WriteLine("randomDouble" + randomDouble);
+
+            // Hypotenuse calculator Program
+            Console.WriteLine("Enter Side A: ");
+            double hypoA = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Enter Side B: ");
+            double hypoB = Convert.ToDouble(Console.ReadLine());
+            double hypoC = Math.Sqrt((hypoA * hypoA) + (hypoB * hypoB));
+            Console.WriteLine("The hypothenuse is " + hypoC);
+
+            // String methods
+            string fullName = "Bro Code";
+            fullName = fullName.ToUpper();
+            Console.WriteLine("fullName" + fullName);
+
+            string phoneNumber = "123-154-144";
+            phoneNumber = phoneNumber.Replace("-", "");
+            Console.WriteLine("phoneNumber" + phoneNumber);
+
+            string niceName = "Thuta Sann";
+            string userName = niceName.Insert(0, "@");
+            Console.WriteLine("userName" + userName);
+
+            string uName = "thuta_sann";
+            uName = uName.Substring(0, 3);
+            Console.WriteLine("SubString" + uName);
+
+            // If Statement
+            Console.WriteLine("Please enter your age : ");
+            int ifAge = Convert.ToInt32(Console.ReadLine());
+            if(ifAge >= 18)
+            {
+                Console.WriteLine("You are Adult");
+            } else
+            {
+                Console.WriteLine("You are under age");
+            }
+
+            // Switch Case
+            Console.WriteLine("What day is it today?");
+            string day = Convert.ToString(Console.ReadLine());
+
+            switch (day)
+            {
+                case "Monday":
+                    Console.WriteLine("This is Monday");
+                    break;
+                case "Tuesday":
+                    Console.WriteLine("This is Tuesday");
+                    break;
+                default:
+                    Console.WriteLine(day + " is not a day");
+                    break;
+            }
+
+            // Logical Operator
+            Console.WriteLine("What's the temperature outside: (C)");
+            double temp = Convert.ToDouble(Console.ReadLine());
+
+            if(temp >= 10 && temp <= 25)
+            {
+                Console.WriteLine("This is warn outside!");
+            } else if(temp >= 50 || temp <= 50)
+            {
+                Console.WriteLine("Do not go outsides!");
+            }
+
+            // While Loop
+            Console.WriteLine("Enter your namae: ");
+            string whileName = Console.ReadLine();
+
+            while(name == "")
+            {
+                Console.Write("Enter your name: ");
+                whileName = Console.ReadLine();
+            }
+            Console.WriteLine("While Name is " + whileName);
+
+            // For loop
+            for(int i = 1; i <= 10; i+=2)
+            {
+                Console.WriteLine(i);
+            }
+
+            // Nested Loop = Loops inside of other loop
+            // Uses varys. used a lots in sorting algorithms
+
+            Console.WriteLine("How many rows?: ");
+            int rows = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("How many columns ? :");
+            int columns = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("What is the symbol : ");
+            string symbol = Console.ReadLine();
+
+            for(int i = 0; i < rows; i++)
+            {
+                for(int j = 0; j < columns; j++)
+                {
+                    Console.Write(symbol);
+                }
+                Console.WriteLine();
+            }
 
 
             Console.ReadKey();

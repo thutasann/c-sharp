@@ -27,8 +27,22 @@ namespace MyFirstProgram
                 Console.WriteLine();
             }
 
+            // object = An instance of a class
+            // A class can be used as a blueprint to create objects (OOP)
+            // objects can have fields & methods (characteristics & actions)
+            Messages.Hello();
+            Human human = new("Thuta", 21);
+            human.Eat();
+
+            Human human2 = new("John", 23);
+            human2.Sleep();
+
+            Car car = new("Ford", "Mustang", 2022, "red");
+            car.Drive();
+
             Console.ReadKey();
         }
 
     }
+    
 }

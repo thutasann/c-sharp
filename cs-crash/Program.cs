@@ -55,15 +55,41 @@ namespace MyFirstProgram
             Console.WriteLine(f);
 
             // User Input
-            Console.WriteLine("What's your name ? ");
-            string nameInput = Console.ReadLine();
+            //Console.WriteLine("What's your name ? ");
+            //string nameInput = Console.ReadLine();
 
-            Console.WriteLine("What is your age ? ");
-            int ageInput = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Hello " + nameInput);
-            Console.WriteLine("Your age is " + ageInput);
+            //Console.WriteLine("What is your age ? ");
+            //int ageInput = Convert.ToInt32(Console.ReadLine());
+            //Console.WriteLine("Hello " + nameInput);
+            //Console.WriteLine("Your age is " + ageInput);
+
+            // Arithmetic Operation
+            int friends = 5;
+            friends += 1;
+            friends++;
+            Console.WriteLine("friends" + friends);
+
+            int reminder = friends % 3;
+            Console.WriteLine("reminder " + reminder);
+
+            // Math Class
+            double mathX = 3.4;
+            double mathA = Math.Pow(mathX, 4);
+            double mathB = Math.Sqrt(mathA);
+            double mathC = Math.Abs(mathB);
+            double mathD = Math.Round(mathC);
+            double mathE = Math.Ceiling(mathD);
+            double mathF = Math.Floor(mathE);
+            double mathG = Math.Max(mathX, mathF);
+            Console.WriteLine(mathG);
+
+            // Random Class
+            Random random = new Random();
+            int randomNum = random.Next(1, 4);
+            Console.WriteLine("randomNum" + randomNum);
+
+
             Console.ReadKey();
-
         }
     }
 }

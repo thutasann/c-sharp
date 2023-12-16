@@ -40,7 +40,19 @@ namespace MyFirstProgram
             Car car = new("Ford", "Mustang", 2022, "red");
             car.Drive();
 
+
+            // static = modifier to declare a static member, which belongs to the class itself
+            // rather than to any specific object
+            Cycle cycle1 = new("Cycle 1");
+            Cycle cycle2 = new("Cycle 2");
+            Console.WriteLine(cycle1.numberOfCars);
+            Console.WriteLine(cycle2.numberOfCars);
+
+            cycle1.Race();
+
+
             Console.ReadKey();
+
         }
 
     }

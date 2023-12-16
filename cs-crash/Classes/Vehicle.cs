@@ -2,7 +2,7 @@
 
 namespace MyFirstProgram
 {
-	public class Vehicle
+	abstract public class Vehicle
 	{
 		public int speed = 0;
 

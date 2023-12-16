@@ -47,7 +47,6 @@ namespace MyFirstProgram
             Cycle cycle2 = new("Cycle 2");
             Console.WriteLine(cycle1.numberOfCars);
             Console.WriteLine(cycle2.numberOfCars);
-
             cycle1.Race();
 
             // overload constructor = technique to creat multiple constructors,
@@ -57,7 +56,9 @@ namespace MyFirstProgram
             Console.WriteLine(pizza);
 
             // Inheritance = 1 or more child classes
-            // // receiving fields, methods etc. from a common parent
+            // receiving fields, methods etc. from a common parent
+            // Abstract Classes = modifier that indicates missing components or incomplete implementation
+            // Vehicle vehicle = new Vehicle(); // <-- abstract
             ChildCar childCar = new();
             ChildCarTwo childCarTwo = new();
             ChildCarThree childCarThree = new();
@@ -65,6 +66,8 @@ namespace MyFirstProgram
             childCar.go();
             Console.WriteLine(childCarTwo.speed);
             Console.WriteLine(childCarThree.wheels);
+
+            
 
             Console.ReadKey();
 

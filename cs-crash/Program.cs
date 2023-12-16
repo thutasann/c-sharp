@@ -49,6 +49,40 @@ namespace MyFirstProgram
             double total;
             total = Multiply(2, 3, 4);
             Console.WriteLine(total);
+
+            double totalParma = CheckOut(2.34, 4.24, 423.5);
+            Console.WriteLine(totalParma);
+
+            // Exception
+            double exX;
+            double exY;
+            double exResult;
+
+            try
+            {
+                Console.WriteLine("Enter number 1: ");
+                exX = Convert.ToDouble(Console.ReadLine());
+
+                Console.WriteLine("Enter number 2: ");
+                exY = Convert.ToDouble(Console.ReadLine());
+
+                exResult = exX / exY;
+                Console.WriteLine("Exresult: " + exResult);
+            }
+            catch (FormatException e)
+            {
+                Console.WriteLine("Enter only NUMBERS pls " + e);
+            }
+            catch (DivideByZeroException e)
+            {
+                Console.WriteLine("You can't divide by zero" + e);
+            }
+
+            // Conditional Operator
+            double temperature = 20;
+            string conditionalMessage;
+            conditionalMessage = (temperature > 25) ? "It is warn outside" : "It is cold outside";
+            Console.WriteLine(conditionalMessage);
             
         }
 
@@ -60,6 +94,15 @@ namespace MyFirstProgram
         static double Multiply(double a, double b, double c)
         {
             return a * b * c;
+        }
+        static double CheckOut(params double[] prices)
+        {
+            double total = 0;
+            foreach(double price in prices)
+            {
+                total += price;
+            }
+            return total;
         }
     }
 }

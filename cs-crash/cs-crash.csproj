@@ -10,11 +10,13 @@
 
   <ItemGroup>
     <None Remove="Classes\" />
+    <None Remove="Classes\Inheritance\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="..\.editorconfig" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Classes\" />
+    <Folder Include="Classes\Inheritance\" />
   </ItemGroup>
 </Project>

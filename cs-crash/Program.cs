@@ -54,7 +54,17 @@ namespace MyFirstProgram
             // with a different set of parameters
             // name + parameter = signature
             Pizza pizza = new("stuffed crust", "red sauce");
+            Console.WriteLine(pizza);
 
+            // Inheritance = 1 or more child classes
+            // // receiving fields, methods etc. from a common parent
+            ChildCar childCar = new();
+            ChildCarTwo childCarTwo = new();
+            ChildCarThree childCarThree = new();
+
+            childCar.go();
+            Console.WriteLine(childCarTwo.speed);
+            Console.WriteLine(childCarThree.wheels);
 
             Console.ReadKey();
 

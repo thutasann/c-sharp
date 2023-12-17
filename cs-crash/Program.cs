@@ -193,7 +193,15 @@ namespace MyFirstProgram
             Console.WriteLine("Radius : " + radius);
             Console.WriteLine("Volume: " + volume);
 
-
+            // Genesric = "not specific to a particular data type
+            // add <T> to : classes, methods, fields, etc.
+            // allows for code reusability for different data types
+            int[] intArray = { 1, 2, 3 };
+            double[] doubleArray = { 1.2, 0.3, 3.3 };
+            string[] stringArray = { "1", "2", "3" };
+            DisplayElments(intArray);
+            DisplayElments(doubleArray);
+            DisplayElments(stringArray);
 
             Console.ReadKey();
 
@@ -213,6 +221,18 @@ namespace MyFirstProgram
         {
             double volume = (4.0 / 3.0) * Math.PI * Math.Pow((int)radius, 3);
             return volume;
+        }
+
+        /// <summary>
+        /// Generic Display Element
+        /// </summary>
+        /// <param name="array"></param>
+        public static void DisplayElments<T>(T[] array)
+        {
+            foreach(T item in array)
+            {
+                Console.WriteLine("IntArray " + item);
+            }
         }
     }
 

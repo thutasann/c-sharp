@@ -116,6 +116,20 @@ namespace MyFirstProgram
             }
 
 
+            // Interface = defines a "contract" that all the classes inheriting from
+            // should follow
+            // An interface declares "what a class should have"
+            // An inheriting class defines "how it should do it"
+            // Benefit = security + multiple inheritance + "plug-and-play"
+
+            Rabbit rabbit = new();
+            rabbit.Flee();
+            Hawk hawk = new();
+            hawk.Hunt();
+            Fish fish = new();
+            fish.Flee();
+            fish.Hunt();
+
             Console.ReadKey();
 
         }

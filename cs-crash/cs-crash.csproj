@@ -14,6 +14,7 @@
     <None Remove="Classes\ArrayOfObjects\" />
     <None Remove="Classes\MethodOverriding\" />
     <None Remove="Classes\PolyMorphism\" />
+    <None Remove="Classes\Interfaces\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="..\.editorconfig" />
@@ -24,5 +25,6 @@
     <Folder Include="Classes\ArrayOfObjects\" />
     <Folder Include="Classes\MethodOverriding\" />
     <Folder Include="Classes\PolyMorphism\" />
+    <Folder Include="Classes\Interfaces\" />
   </ItemGroup>
 </Project>

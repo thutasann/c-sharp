@@ -17,6 +17,7 @@
     <None Remove="Classes\Interfaces\" />
     <None Remove="Classes\ListOfObjects\" />
     <None Remove="Classes\GetSet\" />
+    <None Remove="Classes\Enum\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="..\.editorconfig" />
@@ -30,5 +31,6 @@
     <Folder Include="Classes\Interfaces\" />
     <Folder Include="Classes\ListOfObjects\" />
     <Folder Include="Classes\GetSet\" />
+    <Folder Include="Classes\Enum\" />
   </ItemGroup>
 </Project>

@@ -172,6 +172,29 @@ namespace MyFirstProgram
             getSetCar.Speed = 50999;
             Console.WriteLine("GetCar speed " + getSetCar.Speed);
 
+
+            // Auto-Implemented properties = shortcut when no additional logic is required in the property
+            // you do not have to define a field for a peoperty,
+            // you only have to write get; and/or set; inside the property
+            GetSetCarTwo getSetCarTwo = new("Porsche");
+            Console.WriteLine(getSetCarTwo.Model);
+
+
+            // Enums = special "class" that contains a set of named integer constants
+            // Use enums when you have values that you know will not change.
+            // To get the integer value from an item, you muse explicitly convert to an int
+
+            Console.WriteLine(Planets.Pluto + " is a planet # " + (int)Planets.Pluto);
+
+            string name = PlanetRadius.Earth.ToString();
+            int radius = (int)PlanetRadius.Earth;
+            double volume = Volume(PlanetRadius.Earth);
+            Console.WriteLine("Planet: " + name);
+            Console.WriteLine("Radius : " + radius);
+            Console.WriteLine("Volume: " + volume);
+
+
+
             Console.ReadKey();
 
         }
@@ -186,6 +209,11 @@ namespace MyFirstProgram
             return new ObjCar(objCar.model, objCar.color);
         }
 
+        public static double Volume(PlanetRadius radius)
+        {
+            double volume = (4.0 / 3.0) * Math.PI * Math.Pow((int)radius, 3);
+            return volume;
+        }
     }
 
     

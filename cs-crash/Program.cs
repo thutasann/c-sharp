@@ -97,6 +97,24 @@ namespace MyFirstProgram
             dog.Speak();
             cat.Speak();
 
+            // ToString()
+            ObjCar objCarToString = new("Modal", "Red");
+            Console.WriteLine(objCarToString.ToString());
+
+            // Polymorphism = Greek word that means to "have many forms"
+            // Objects can be identified by more than one type
+            // Ex. A Dog is also: Canine, Animal, Organism
+            PolyCar polyCar = new();
+            PolyBicycle polyBicycle = new();
+            PolyBoat polyBoat = new();
+
+            PolyVehicle[] polyVehicles = { polyCar, polyBicycle, polyBoat };
+
+            foreach(PolyVehicle polyVehicle in polyVehicles)
+            {
+                polyVehicle.Go();
+            }
+
 
             Console.ReadKey();
 

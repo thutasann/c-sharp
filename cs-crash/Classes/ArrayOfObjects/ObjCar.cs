@@ -12,6 +12,11 @@ namespace MyFirstProgram
 			this.model = model;
 			this.color = color;
 		}
-	}
+
+        public override string ToString()
+        {
+			return "This is a " + model + " " + color;
+        }
+    }
 }
 

@@ -161,6 +161,17 @@ namespace MyFirstProgram
                 Console.WriteLine("Player " + player);
             }
 
+            // Getters and Setters = add securit to fields by encapsulation
+            // They're accessors found within properties
+            // properties = combines aspects of both fields and methods (share name with a field)
+            // get accessor = used to return the property value
+            // set accessor = use to assign a new value
+            // value keyword =  defiens the value being assinged by the set (parameter)
+
+            GetSetCar getSetCar = new(400);
+            getSetCar.Speed = 50999;
+            Console.WriteLine("GetCar speed " + getSetCar.Speed);
+
             Console.ReadKey();
 
         }

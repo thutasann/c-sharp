@@ -16,6 +16,7 @@
     <None Remove="Classes\PolyMorphism\" />
     <None Remove="Classes\Interfaces\" />
     <None Remove="Classes\ListOfObjects\" />
+    <None Remove="Classes\GetSet\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="..\.editorconfig" />
@@ -28,5 +29,6 @@
     <Folder Include="Classes\PolyMorphism\" />
     <Folder Include="Classes\Interfaces\" />
     <Folder Include="Classes\ListOfObjects\" />
+    <Folder Include="Classes\GetSet\" />
   </ItemGroup>
 </Project>

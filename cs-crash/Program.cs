@@ -130,6 +130,37 @@ namespace MyFirstProgram
             fish.Flee();
             fish.Hunt();
 
+            // List = data structure that respresents a list of objects that can be accessed by index.
+            // Similar to array, but can dynamically increase/decrease in size
+            // using System.Collections.Generic.
+
+            List<string> foods = new()
+            {
+                "Pizza",
+                "Hamburger",
+                "Hotdog"
+            };
+
+            foreach (string food in foods)
+            {
+                Console.WriteLine(food);
+            }
+
+            // List of Objects
+            List<Player> players = new();
+            Player player1 = new Player("chad one");
+            Player player2 = new Player("chad two");
+            Player player3 = new Player("chad threee");
+
+            players.Add(player1);
+            players.Add(player2);
+            players.Add(player3);
+
+            foreach(Player player in players)
+            {
+                Console.WriteLine("Player " + player);
+            }
+
             Console.ReadKey();
 
         }
